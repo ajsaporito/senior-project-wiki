@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  color: oklch(98.5% 0.002 247.839);
+  background-color: oklch(44.2% 0.017 285.786);
+  padding: 2rem;
+  text-align: center;
+  font-size: large;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  background-color: oklch(96.7% 0.003 264.542);
+}
+
+footer {
+  color: oklch(98.5% 0.002 247.839);
+  background-color: oklch(44.2% 0.017 285.786);
+  text-align: center;
+  padding: 1rem 0;
+}
