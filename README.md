@@ -1,3 +1,3 @@
 # Senior Project Wiki
 
-Currently in development
+This is the Wiki Site for SE414 Introduction to Senior Project at NEIT.

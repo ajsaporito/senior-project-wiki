@@ -1,5 +1,0 @@
-- Add main content:
-  -- Project info
-  -- Carousel of screenshots
-  -- Links to the source repositories
-  -- Possibly more

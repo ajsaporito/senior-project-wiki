@@ -27,8 +27,98 @@ header {
 
 main {
   flex: 1;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: oklch(96.7% 0.003 264.542);
+}
+
+main div {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: large;
+  color: oklch(30% 0.05 270);
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 0.5rem;
+  align-items: stretch;
+}
+
+.grid-container {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-item {
+  background-color: oklch(98.5% 0.002 247.839);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  border: 1px solid oklch(90% 0.01 260);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  border-color: oklch(70% 0.04 270);
+}
+
+.grid-item p {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: oklch(40% 0.05 270);
+}
+
+.grid-item a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.4rem;
+  border: 1px solid oklch(90% 0.01 260);
+  background-color: oklch(99% 0.002 250);
+  color: oklch(35% 0.04 270);
+  text-align: left;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.grid-item a:last-of-type {
+  margin-bottom: 0;
+}
+
+.grid-item a:hover,
+.grid-item a:focus-visible {
+  background-color: oklch(92% 0.03 270);
+  border-color: oklch(70% 0.04 270);
+  transform: translateY(-1px);
+}
+
+.grid-item a:focus-visible {
+  outline: 2px solid oklch(55% 0.08 270);
+  outline-offset: 2px;
 }
 
 footer {

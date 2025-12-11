@@ -5,7 +5,9 @@ function closeAll() {
     const id = btn.getAttribute('aria-controls');
     const menu = document.getElementById(id);
     btn.setAttribute('aria-expanded', 'false');
-    if (menu) menu.hidden = true;
+    if (menu) {
+      menu.hidden = true;
+    }
   });
 }
 
@@ -17,13 +19,17 @@ buttons.forEach(btn => {
     const open = btn.getAttribute('aria-expanded') === 'true';
     closeAll();
     btn.setAttribute('aria-expanded', String(!open));
-    if (menu) menu.hidden = open;
+    if (menu) {
+      menu.hidden = open;
+    }
   });
 
   btn.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       btn.setAttribute('aria-expanded', 'false');
-      if (menu) menu.hidden = true;
+      if (menu) {
+        menu.hidden = true;
+      }
     }
   });
 
