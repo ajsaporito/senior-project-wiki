@@ -5,17 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Senior Project Wiki</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <body>
   <header>
     <h1>Senior Project Wiki Site</h1>
   </header>
+  <nav aria-label="Primary">
+    <ul class="nav">
+      <li class="nav-item">
+        <button class="dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="sr-menu">
+          Status Reports
+          <img src="assets/svgs/caret-down-solid-full.svg" alt="Caret Down Icon" class="caret-icon" aria-hidden="true">
+        </button>
+        <ul id="sr-menu" class="sub-items" hidden>
+          <li><a href="assets/artifacts/status-reports/week2.pdf" target="_blank" rel="noopener noreferrer">Week 2</a></li>
+          <li><a href="assets/artifacts/status-reports/week3.pdf" target="_blank" rel="noopener noreferrer">Week 3</a></li>
+          <li><a href="assets/artifacts/status-reports/week4.pdf" target="_blank" rel="noopener noreferrer">Week 4</a></li>
+          <li><a href="assets/artifacts/status-reports/week5.pdf" target="_blank" rel="noopener noreferrer">Week 5</a></li>
+          <li><a href="assets/artifacts/status-reports/week6.pdf" target="_blank" rel="noopener noreferrer">Week 6</a></li>
+          <li><a href="assets/artifacts/status-reports/week7.pdf" target="_blank" rel="noopener noreferrer">Week 7</a></li>
+          <li><a href="assets/artifacts/status-reports/week8.pdf" target="_blank" rel="noopener noreferrer">Week 8</a></li>
+          <li><a href="assets/artifacts/status-reports/week9.pdf" target="_blank" rel="noopener noreferrer">Week 9</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <button class="dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="pd-menu">
+          Project Deliverables
+          <img src="assets/svgs/caret-down-solid-full.svg" alt="Caret Down Icon" class="caret-icon" aria-hidden="true">
+        </button>
+        <ul id="pd-menu" class="sub-items" hidden>
+          <li><a href="assets/artifacts/deliverables/project-proposal.pdf" target="_blank" rel="noopener noreferrer">Week 1 - Project Proposal</a></li>
+          <li><a href="assets/artifacts/deliverables/use-cases.pdf" target="_blank" rel="noopener noreferrer">Week 3 - Use Cases</a></li>
+          <li><a href="assets/artifacts/deliverables/prototypes.pdf" target="_blank" rel="noopener noreferrer">Week 4 - Storyboards</a></li>
+          <li><a href="assets/artifacts/deliverables/database-design.pdf" target="_blank" rel="noopener noreferrer">Week 5 - Database Design</a></li>
+          <li><a href="assets/artifacts/deliverables/activity-diagram.pdf" target="_blank" rel="noopener noreferrer">Week 6 - Activity Diagrams</a></li>
+          <li><a href="assets/artifacts/deliverables/class-diagram.pdf" target="_blank" rel="noopener noreferrer">Week 7 - Class Diagrams</a></li>
+          <li><a href="assets/artifacts/deliverables/heuristic-evaluation.pdf" target="_blank" rel="noopener noreferrer">Week 8 - Heuristic Evaluation</a></li>
+          <li><a href="assets/artifacts/deliverables/gantt-chart.pdf" target="_blank" rel="noopener noreferrer">Week 9 - Gantt Chart</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <button class="dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="pr-menu">
+          Presentations
+          <img src="assets/svgs/caret-down-solid-full.svg" alt="Caret Down Icon" class="caret-icon" aria-hidden="true">
+        </button>
+        <ul id="pr-menu" class="sub-items" hidden>
+          <li><a href="assets/artifacts/deliverables/midterm-presentation.pdf" target="_blank" rel="noopener noreferrer">Week 5 - Midterm Presentation</a></li>
+          <li><a href="assets/artifacts/deliverables/final-presentation.pdf" target="_blank" rel="noopener noreferrer">Week 10 - Final Presentation</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
   <main>
-
+    <div>
+      <p>This is a collection of project artifacts organized by week.</p>
+      <p>Files can be viewed by navigating the menu above or in the main section below.</p>
+    </div>
+    <section class="grid-container">
+      <div class="grid-item">
+        <p>Week 1</p>
+        <a href="assets/artifacts/deliverables/project-proposal.pdf" target="_blank" rel="noopener noreferrer">Project Proposal</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 2</p>
+        <a href="assets/artifacts/status-reports/week2.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 3</p>
+        <a href="assets/artifacts/status-reports/week3.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/use-cases.pdf" target="_blank" rel="noopener noreferrer">Use Cases</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 4</p>
+        <a href="assets/artifacts/status-reports/week4.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/prototypes.pdf" target="_blank" rel="noopener noreferrer">Storyboards</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 5</p>
+        <a href="assets/artifacts/status-reports/week5.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/database-design.pdf" target="_blank" rel="noopener noreferrer">Database Design</a>
+        <a href="assets/artifacts/deliverables/midterm-presentation.pdf" target="_blank" rel="noopener noreferrer">Midterm Presentation</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 6</p>
+        <a href="assets/artifacts/status-reports/week6.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/activity-diagram.pdf" target="_blank" rel="noopener noreferrer">Activity Diagrams</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 7</p>
+        <a href="assets/artifacts/status-reports/week7.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/class-diagram.pdf" target="_blank" rel="noopener noreferrer">Class Diagrams</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 8</p>
+        <a href="assets/artifacts/status-reports/week8.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/heuristic-evaluation.pdf" target="_blank" rel="noopener noreferrer">Heuristic Evaluation</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 9</p>
+        <a href="assets/artifacts/status-reports/week9.pdf" target="_blank" rel="noopener noreferrer">Status Report</a>
+        <a href="assets/artifacts/deliverables/gantt-chart.pdf" target="_blank" rel="noopener noreferrer">Gantt Chart</a>
+      </div>
+      <div class="grid-item">
+        <p>Week 10</p>
+        <a href="assets/artifacts/deliverables/final-presentation.pdf" target="_blank" rel="noopener noreferrer">Final Presentation</a>
+      </div>
+    </section>
   </main>
   <footer>
-    <p>&copy; 2025 AJ Saporito & Tristen Jussaume</p>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> AJ Saporito & Tristen Jussaume</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+      View on <a style="color: #ffffff;" href="https://github.com/ajsaporito/senior-project-wiki" target="_blank">GitHub</a>
+    </p>
   </footer>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>
